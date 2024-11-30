@@ -10,8 +10,9 @@
 
 # Nội dung
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)*[Nguồn: Flaticon](https://www.flaticon.com/free-icon/logo_187868)
-*
+![](https://cdn.jsdelivr.net/gh/KiemesSix/archiveks@main/image/logo/3.png)
+[Nguồn: Flaticon](https://www.flaticon.com/free-icon/logo_187868)
+
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
 
