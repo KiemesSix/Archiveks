@@ -1,14 +1,8 @@
-### Archiveks
+### Giới thiệu
 
-- Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);
-- Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;
-- Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;
-- Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;
-- Support identification, interpretation, fliter of the HTML tags;
-- Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;
-- Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
+- Một kho lưu trữ tổng hợp.
 
-# Nội dung
+# Archiveks
 
 ![](https://cdn.jsdelivr.net/gh/KiemesSix/archiveks@main/image/logo/3.png)
 [Nguồn: Flaticon](https://www.flaticon.com/free-icon/logo_187868)
@@ -101,46 +95,14 @@ Code Blocks (Preformatted text):
     | Content Cell  | Content Cell  |
     | Content Cell  | Content Cell  |
 
-####Javascript　
+####Làm sạch giao điện　
 
-```javascript
-function test(){
-	console.log("Hello world!");
-}
- 
-(function(){
-    var box = function(){
-        return box.fn.init();
-    };
-
-    box.prototype = box.fn = {
-        init : function(){
-            console.log('box.init()');
-
-			return this;
-        },
-
-		add : function(str){
-			alert("add", str);
-
-			return this;
-		},
-
-		remove : function(str){
-			alert("remove", str);
-
-			return this;
-		}
-    };
-    
-    box.fn.init.prototype = box.fn;
-    
-    window.box =box;
-})();
-
-var testBox = box();
-testBox.add("jQuery").remove("jQuery");
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='clean-install.xml' b:templateVersion='0.0.1' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><b:attr name='xmlns' value=''/><b:attr name='xmlns:b' value=''/><b:attr name='xmlns:expr' value=''/><b:attr name='xmlns:data' value=''/><head><b:if cond='false'><b:skin><![CDATA[]]></b:skin></b:if></head><body><b:section id='_' maxwidgets='1' showaddelement='false'/></body></html>
 ```
+Sao chép và dán toàn bộ đoạn mã sau để xoá sạch giao diện cũ
 
 ####HTML code
 
