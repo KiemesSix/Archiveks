@@ -1,6 +1,8 @@
 # Archiveks
-## Kho lưu trữ của Kiếm Sĩ
+### Kho lưu trữ của Kiếm Sĩ
+
 [Truy cập Archiveks](https://archiveks.blogspot.com)
+
 **In đậm**
 *In nghiêng*
 ![Logo](https://cdn.jsdelivr.net/gh/KiemesSix/archiveks@main/image/logo/3.svg)
@@ -16,7 +18,8 @@
 function hello() {
     console.log('Hello World');
 }
-### 7. **Tạo bảng**
+
+**Tạo bảng**
 Bạn có thể tạo bảng bằng cách sử dụng dấu gạch dọc `|` và dấu gạch ngang `-`.
 
 Ví dụ:
