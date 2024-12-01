@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='plus-ui.xml' b:templateVersion='3.0.0' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><b:attr name='xmlns' value=''/><b:attr name='xmlns:b' value=''/><b:attr name='xmlns:expr' value=''/><b:attr name='xmlns:data' value=''/>
-<b:comment>
-<!--[
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='index.xml' b:templateVersion='3.0.0' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><b:attr name='xmlns' value=''/><b:attr name='xmlns:b' value=''/><b:attr name='xmlns:expr' value=''/><b:attr name='xmlns:data' value=''/>
 
-  ==============================================================================
-
-    >  Before you edit HTML, please read the statement carefully to make sure
-       you don't get in problem while editing:
-
-    1. Make changes if and only if our team suggested you to do or official
-       documentation pointed to that particular code.
-    2. Don't change id attribute of any node
-    3. It is recommended that you take a backup of theme before editing.
-    4. If a comment says 'Restricted Area' or 'Do not remove', don't make
-       changes there.
-    5. If you don't understand anything from Documentation, please contact us.
-
-  ==============================================================================
-
-    >  WARNING :
-
-       This theme is premium (paid).
-       You can only get it by purchasing officially from 'toishare.com'.
-       If you get it for free by any method, that means you get it illegally.
-
-  ==============================================================================
-
-]-->
-</b:comment>
 <b:with value='data:skin.vars' var='vars'>
 <b:with value='{ status: (data:vars.amp_status == &quot;2px&quot; and data:vars.amp_story != &quot;1px&quot;), type: (data:vars.amp_story == &quot;2px&quot; ? 1 : 2), active: (data:vars.amp_status == &quot;2px&quot; and data:vars.amp_story != &quot;1px&quot; and data:view.isPost and (data:vars.amp_story != &quot;2px&quot; ? snippet(data:view.url.canonical) contains &quot;story.html&quot; : true)) }' var='story'>
 <b:with value='{ status: (data:vars.amp_status == &quot;2px&quot;), type: (data:vars.amp_type == &quot;1px&quot; ? 1 : data:vars.amp_type == &quot;2px&quot; ? 2 : 3), active: (data:story.active or (data:vars.amp_status == &quot;2px&quot; and (data:vars.amp_type != &quot;1px&quot; ? data:view.url == params(data:view.url, { amp: &quot;1&quot; }) : true))) }' var='amp'>
@@ -43,9 +16,9 @@
 <head>
   <b:comment><!--[ <head> | <!> Add custom codes (below) ]--></b:comment>
 
-    <link rel="stylesheet" href="https://cdn.vidstack.io/player/theme.css" />
-    <link rel="stylesheet" href="https://cdn.vidstack.io/player/video.css" />
-    <script src="https://cdn.vidstack.io/player" type="module"></script>
+    <link href='https://cdn.vidstack.io/player/theme.css' rel='stylesheet'/>
+    <link href='https://cdn.vidstack.io/player/video.css' rel='stylesheet'/>
+    <script src='https://cdn.jsdelivr.net/gh/KiemesSix/archiveks@main/javascript/player-1.0.0.js' type='module'/>
 
   <b:comment><!--[ <head> | <!> Add custom codes (above) ]--></b:comment>
 
@@ -302,19 +275,19 @@
 [!] @type {String}
 [!] Warning: Don't add invalid disqus shortname
 
-<Variable name="font.head" description="Heading font name" type="string" default="" value="Google Sans Text"/>
+<Variable name="font.head" description="Heading font name" type="string" default="" value="Inter"/>
 [!] Heading font name
 [!] @type {String}
 
-<Variable name="font.body" description="Body font name" type="string" default="" value="Google Sans Text"/>
+<Variable name="font.body" description="Body font name" type="string" default="" value="Inter"/>
 [!] Body font name
 [!] @type {String}
 
-<Variable name="font.bodyAlt" description="Body alternative font name" type="string" default="" value="Google Sans Text"/>
+<Variable name="font.bodyAlt" description="Body alternative font name" type="string" default="" value="Inter"/>
 [!] Body alternative font name
 [!] @type {String}
 
-<Variable name="font.code" description="Code Font Name" type="string" default="" value="Google Sans Mono"/>
+<Variable name="font.code" description="Code Font Name" type="string" default="" value="Roboto Mono"/>
 [!] Code font name
 [!] @type {String}
 
@@ -323,27 +296,27 @@
 [!] @type {String}
 [!] Warning: The font CSS must be in single line and string must be escaped
 
-<Variable name="font.link1" description="Font Link 1" type="string" default="" value=""/>
+<Variable name="font.link1" description="Font Link 1" type="string" default="" value="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/>
 [!] Font Link 1
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
 
-<Variable name="font.link2" description="Font Link 2" type="string" default="" value=""/>
+<Variable name="font.link2" description="Font Link 2" type="string" default="" value="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/>
 [!] Font Link 2
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
 
-<Variable name="font.link3" description="Font Link 3" type="string" default="" value=""/>
+<Variable name="font.link3" description="Font Link 3" type="string" default="" value="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/>
 [!] Font Link 3
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
 
-<Variable name="font.link4" description="Font Link 4" type="string" default="" value=""/>
+<Variable name="font.link4" description="Font Link 4" type="string" default="" value="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/>
 [!] Font Link 4
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
 
-<Variable name="font.link5" description="Font Link 5" type="string" default="" value=""/>
+<Variable name="font.link5" description="Font Link 5" type="string" default="" value="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap"/>
 [!] Font Link 5
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
@@ -1287,7 +1260,7 @@ body{position:relative;margin:0;padding:0;top:0;width:100%;font-family:var(--fon
 .fotC .LinkList ul:not(.sL) li::before{content:'\2013';opacity:.3}
 .fotC .sL{display:flex;flex-wrap:wrap;align-items:baseline;font-size:13px;opacity:.8}
 .fotC .sL li{display:inline-flex;align-items:baseline}
-.fotC .sL li:not(:first-child)::before{content:'/';margin:0 5px}
+.fotC .sL li:not(:first-child)::before{content:'·';margin:0 5px}
 .fotC .sL li >*::before{content:attr(data-text)}
 .fotN ul{list-style:none;margin:0;padding:0}
 .fotN{display:flex;flex-wrap:wrap;position:relative;width:calc(100% + 30px);left:-15px;right:-15px}
@@ -1335,7 +1308,7 @@ body{position:relative;margin:0;padding:0;top:0;width:100%;font-family:var(--fon
 .blogT .t span{font-weight:400;font-size:90%;opacity:.7}
 .blogT .t span::before{content:attr(data-text)}
 .blogT .t span::after{content:'';margin:0 4px}
-.blogT .t span.hm::after{content:'/';margin:0 8px}
+.blogT .t span.hm::after{content:'·';margin:0 8px}
 
 /* Thumbnail */
 .pThmb{position:relative;border-radius:5px;margin-bottom:20px;background:var(--transB);overflow:hidden}
@@ -1381,7 +1354,7 @@ span.imgThm::before{content:'';width:28px;height:28px;background:url("data:image
 .pLbls::before{opacity:.7}
 .pLbls a:hover{text-decoration:underline}
 .pLbls >*{color:inherit;display:inline}
-.pLbls >*:not(:last-child)::after{content:'/'}
+.pLbls >*:not(:last-child)::after{content:'·'}
 
 /* Profile Images and Name */
 .im{display:flex;align-items:center;justify-content:center;width:35px;height:35px;border-radius:16px;background-color:var(--transB);background-size:cover;background-position:center;background-repeat:no-repeat}
@@ -1469,7 +1442,7 @@ img.im{object-fit:cover;object-position:center}
 /* Breadcrumb */
 .brdCmb{margin-bottom:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .brdCmb a{color:inherit}
-.brdCmb >*:not(:last-child)::after{content:'/';margin:0 4px;font-size:90%;opacity:.6}
+.brdCmb >*:not(:last-child)::after{content:'·';margin:0 4px;font-size:90%;opacity:.6}
 .brdCmb >*{display:inline}
 .brdCmb .tl::before{content:attr(data-text)}
 .brdCmb .hm a{font-size:90%;opacity:.7}
@@ -1522,7 +1495,7 @@ html:has(.headS:focus-within){overflow:hidden}
 .itemPp{counter-reset:p-cnt}
 .itemPp .iCtnt{display:flex}
 .itemPp >*:not(:last-child){margin-bottom:25px}
-.itemPp .iCtnt::before{flex-shrink:0;content:'#' counter(p-cnt);counter-increment:p-cnt;width:25px;opacity:.6;font-size:85%;line-height:1.8em}
+.itemPp .iCtnt::before{flex-shrink:0;content:'0' counter(p-cnt);counter-increment:p-cnt;width:25px;opacity:.6;font-size:85%;line-height:1.8em}
 .iInr{flex:1 0;width:calc(100% - 25px)}
 .iTtl{font-size:.95rem;font-weight:700;line-height:1.5em}
 .iTtmp{display:inline-flex}
@@ -3970,11 +3943,11 @@ const PlusUIConfig = () => ({});
     </b:includable>
 
     <b:includable id='postTimestampPublish'>
-      <time class='aTtmp pTtmp pbl' expr:data-text='data:vars.m_published' expr:data-time='format(data:post.date, &quot;MMM d, YYYY&quot;)' expr:datetime='data:post.date.iso8601' expr:title='&quot;Published on: &quot; + format(data:post.date, &quot;MMMM d, YYYY&quot;)'/>
+      <time class='aTtmp pTtmp pbl' expr:data-text='data:vars.m_published' expr:data-time='format(data:post.date, &quot;dd MMMM, YYYY&quot;)' expr:datetime='data:post.date.iso8601' expr:title='&quot;Published on: &quot; + format(data:post.date, &quot;dd MMMM, YYYY&quot;)'/>
     </b:includable>
 
     <b:includable id='postTimestampUpdate'>
-      <time class='aTtmp pTtmp upd' expr:data-text='data:vars.m_updated' expr:data-time='format(data:post.lastUpdated, &quot;MMM d, YYYY&quot;)' expr:datetime='data:post.lastUpdated.iso8601' expr:title='&quot;Updated on: &quot; + format(data:post.lastUpdated, &quot;MMMM d, YYYY&quot;)'/>
+      <time class='aTtmp pTtmp upd' expr:data-text='data:vars.m_updated' expr:data-time='format(data:post.lastUpdated, &quot;dd MMMM, YYYY&quot;)' expr:datetime='data:post.lastUpdated.iso8601' expr:title='&quot;Updated on: &quot; + format(data:post.lastUpdated, &quot;dd MMMM, YYYY&quot;)'/>
     </b:includable>
 
     <b:includable id='postTimestamps'>
@@ -4410,7 +4383,7 @@ const PlusUIConfig = () => ({});
 }</b:includable>
 
     <!--[ json.post | Restricted area ]-->
-    <b:includable id='json.post' var='post'>{&quot;ttl&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;sum&quot;:&quot;<b:eval expr='snippet(data:post.snippets.long, { length: 400, links: false, linebreaks: false, ellipsis: true }).jsonEscaped'/>&quot;,&quot;snp&quot;:&quot;<b:eval expr='snippet(data:post.body, { links: false, linebreaks: false, ellipsis: true }).jsonEscaped'/>&quot;,&quot;con&quot;:null,&quot;thm&quot;:<b:if cond='data:post.featuredImage'>&quot;<b:eval expr='resizeImage((data:post.featuredImage not contains &quot;http://&quot; and data:post.featuredImage not contains &quot;https://&quot; ? &quot;https:&quot; + data:post.featuredImage : data:post.featuredImage), &quot;1280&quot;, &quot;16:9&quot;).jsonEscaped'/>&quot;<b:else/>null</b:if>,&quot;url&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;,&quot;id&quot;:&quot;<data:post.id/>&quot;,&quot;pub&quot;:&quot;<data:post.date.iso8601.jsonEscaped/>&quot;,&quot;pubTs&quot;:&quot;<b:eval expr='format(data:post.date, &quot;MMM d, YYYY&quot;).jsonEscaped'/>&quot;,&quot;upd&quot;:&quot;<data:post.lastUpdated.iso8601.jsonEscaped/>&quot;,&quot;updTs&quot;:&quot;<b:eval expr='format(data:post.lastUpdated, &quot;MMM d, YYYY&quot;).jsonEscaped'/>&quot;,&quot;lab&quot;:[<b:if cond='data:post.labels'><b:with value='data:post.labels.length' var='length'><b:loop index='i' values='data:post.labels' var='label'>&quot;<data:label.name.jsonEscaped/>&quot;<b:if cond='(data:i + 1) &lt; data:length'>,</b:if></b:loop></b:with></b:if>],&quot;aut&quot;:{&quot;nm&quot;:&quot;<data:post.author.name.jsonEscaped/>&quot;,&quot;url&quot;:<b:if cond='data:post.author.profileUrl'>&quot;<data:post.author.profileUrl.jsonEscaped/>&quot;<b:else/>null</b:if>,&quot;im&quot;:<b:if cond='data:post.author.authorPhoto.image'>&quot;<b:eval expr='resizeImage((data:post.author.authorPhoto.image not contains &quot;http://&quot; and data:post.author.authorPhoto.image not contains &quot;https://&quot; ? &quot;https:&quot; + data:post.author.authorPhoto.image : data:post.author.authorPhoto.image), &quot;512&quot;, &quot;1:1&quot;).jsonEscaped'/>&quot;<b:else/>null</b:if>},&quot;com&quot;:{&quot;num&quot;:<b:eval expr='data:post.numberOfComments'/>,&quot;ttl&quot;:&quot;<b:message name='messages.numberOfComments'><b:param expr:value='data:post.numberOfComments' name='numComments'/></b:message>&quot;},&quot;loc&quot;: <b:if cond='data:post.location'>{&quot;nm&quot;:&quot;<data:post.location.name.jsonEscaped/>&quot;,&quot;mpU&quot;:&quot;<data:post.location.mapsUrl.jsonEscaped/>&quot;}<b:else/>null</b:if>}</b:includable>
+    <b:includable id='json.post' var='post'>{&quot;ttl&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;sum&quot;:&quot;<b:eval expr='snippet(data:post.snippets.long, { length: 400, links: false, linebreaks: false, ellipsis: true }).jsonEscaped'/>&quot;,&quot;snp&quot;:&quot;<b:eval expr='snippet(data:post.body, { links: false, linebreaks: false, ellipsis: true }).jsonEscaped'/>&quot;,&quot;con&quot;:null,&quot;thm&quot;:<b:if cond='data:post.featuredImage'>&quot;<b:eval expr='resizeImage((data:post.featuredImage not contains &quot;http://&quot; and data:post.featuredImage not contains &quot;https://&quot; ? &quot;https:&quot; + data:post.featuredImage : data:post.featuredImage), &quot;1280&quot;, &quot;16:9&quot;).jsonEscaped'/>&quot;<b:else/>null</b:if>,&quot;url&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;,&quot;id&quot;:&quot;<data:post.id/>&quot;,&quot;pub&quot;:&quot;<data:post.date.iso8601.jsonEscaped/>&quot;,&quot;pubTs&quot;:&quot;<b:eval expr='format(data:post.date, &quot;dd MMMM, YYYY&quot;).jsonEscaped'/>&quot;,&quot;upd&quot;:&quot;<data:post.lastUpdated.iso8601.jsonEscaped/>&quot;,&quot;updTs&quot;:&quot;<b:eval expr='format(data:post.lastUpdated, &quot;dd MMMM, YYYY&quot;).jsonEscaped'/>&quot;,&quot;lab&quot;:[<b:if cond='data:post.labels'><b:with value='data:post.labels.length' var='length'><b:loop index='i' values='data:post.labels' var='label'>&quot;<data:label.name.jsonEscaped/>&quot;<b:if cond='(data:i + 1) &lt; data:length'>,</b:if></b:loop></b:with></b:if>],&quot;aut&quot;:{&quot;nm&quot;:&quot;<data:post.author.name.jsonEscaped/>&quot;,&quot;url&quot;:<b:if cond='data:post.author.profileUrl'>&quot;<data:post.author.profileUrl.jsonEscaped/>&quot;<b:else/>null</b:if>,&quot;im&quot;:<b:if cond='data:post.author.authorPhoto.image'>&quot;<b:eval expr='resizeImage((data:post.author.authorPhoto.image not contains &quot;http://&quot; and data:post.author.authorPhoto.image not contains &quot;https://&quot; ? &quot;https:&quot; + data:post.author.authorPhoto.image : data:post.author.authorPhoto.image), &quot;512&quot;, &quot;1:1&quot;).jsonEscaped'/>&quot;<b:else/>null</b:if>},&quot;com&quot;:{&quot;num&quot;:<b:eval expr='data:post.numberOfComments'/>,&quot;ttl&quot;:&quot;<b:message name='messages.numberOfComments'><b:param expr:value='data:post.numberOfComments' name='numComments'/></b:message>&quot;},&quot;loc&quot;: <b:if cond='data:post.location'>{&quot;nm&quot;:&quot;<data:post.location.name.jsonEscaped/>&quot;,&quot;mpU&quot;:&quot;<data:post.location.mapsUrl.jsonEscaped/>&quot;}<b:else/>null</b:if>}</b:includable>
 
     <!--[ json.posts | Restricted area ]-->
     <b:includable id='json.posts' var='posts'>{<b:loop index='i' values='data:posts' var='post'>&quot;<data:post.id/>&quot;:<b:include data='post' name='json.post'/><b:if cond='(data:i + 1) &lt; data:posts.length'>,</b:if></b:loop>}</b:includable>
@@ -4788,7 +4761,7 @@ const PlusUIConfig = () => ({});
 
             <b:comment><!--[ Header widget ]--></b:comment>
             <b:section class='headN bl-hide-title' id='sec_Header_Title' maxwidgets='1' showaddelement='false'>
-              <b:widget id='Header01' locked='true' title='Plus Thủ Thuật (Tiêu đề)' type='Header' version='2' visible='true'>
+              <b:widget id='Header01' locked='true' title='Archive (Tiêu đề)' type='Header' version='2' visible='true'>
                 <b:widget-settings>
                   <b:widget-setting name='displayUrl'/>
                   <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -4849,7 +4822,7 @@ const PlusUIConfig = () => ({});
 
           <div class='headD headR'>
             <b:section class='headS bl-hide-title' id='sec_Header_Search' maxwidgets='1' showaddelement='false'>
-              <b:widget id='BlogSearch01' locked='true' title='Try &apos;Adventure&apos;' type='BlogSearch' version='2' visible='true'>
+              <b:widget id='BlogSearch01' locked='true' title='Tìm kiếm trên Archiveks' type='BlogSearch' version='2' visible='true'>
                 <b:includable id='main'>
                   <b:class name='srchW'/>
                   <b:include name='content'/>
@@ -5002,7 +4975,7 @@ const PlusUIConfig = () => ({});
                   </b:if>
                 </b:includable>
               </b:widget>
-              <b:widget cond='data:view.isHomepage' id='Profile01' locked='true' title='Contributors' type='Profile' version='2' visible='true'>
+              <b:widget cond='data:view.isHomepage' id='Profile01' locked='true' title='Quản trị viên' type='Profile' version='2' visible='true'>
                 <b:widget-settings>
                   <b:widget-setting name='showaboutme'>true</b:widget-setting>
                   <b:widget-setting name='showlocation'>true</b:widget-setting>
@@ -5106,29 +5079,13 @@ const PlusUIConfig = () => ({});
                 </b:includable>
                 <b:includable id='viewProfileLink'/>
               </b:widget>
-              <b:widget cond='!data:view.isPreview and !data:amp.active' id='LinkList02' locked='true' title='Bookmark Posts' type='LinkList' version='2' visible='true'>
+              <b:widget cond='!data:view.isPreview and !data:amp.active' id='LinkList02' locked='true' title='Lưu trữ' type='LinkList' version='2' visible='true'>
                 <b:widget-settings>
-                  <b:widget-setting name='text-9'>Pinterest</b:widget-setting>
-                  <b:widget-setting name='link-9'>#</b:widget-setting>
-                  <b:widget-setting name='text-8'>Pinterest</b:widget-setting>
-                  <b:widget-setting name='link-7'>#</b:widget-setting>
-                  <b:widget-setting name='link-8'>#</b:widget-setting>
-                  <b:widget-setting name='link-5'>#</b:widget-setting>
-                  <b:widget-setting name='link-6'>#</b:widget-setting>
-                  <b:widget-setting name='link-3'>#</b:widget-setting>
-                  <b:widget-setting name='link-4'>#</b:widget-setting>
-                  <b:widget-setting name='text-1'>viewAllArticlesText</b:widget-setting>
-                  <b:widget-setting name='text-0'>noBookmarkMessage</b:widget-setting>
-                  <b:widget-setting name='text-3'>Tiktok</b:widget-setting>
-                  <b:widget-setting name='text-2'>Twitter</b:widget-setting>
-                  <b:widget-setting name='text-5'>Telegram</b:widget-setting>
-                  <b:widget-setting name='text-4'>Whatsapp</b:widget-setting>
-                  <b:widget-setting name='text-7'>LinkedIn</b:widget-setting>
-                  <b:widget-setting name='text-6'>Youtube</b:widget-setting>
                   <b:widget-setting name='shownum'>6</b:widget-setting>
                   <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                  <b:widget-setting name='text-1'>viewAllArticlesText</b:widget-setting>
                   <b:widget-setting name='link-1'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-2'>#</b:widget-setting>
+                  <b:widget-setting name='text-0'>noBookmarkMessage</b:widget-setting>
                   <b:widget-setting name='link-0'>custom_text</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
@@ -5153,46 +5110,18 @@ const PlusUIConfig = () => ({});
                 </b:includable>
                 <b:includable id='content'><!--[ removed ]--></b:includable>
               </b:widget>
-              <b:widget cond='!data:view.isPreview and !data:amp.active' id='LinkList03' locked='true' title='Translate' type='LinkList' version='2' visible='true'>
+              <b:widget cond='!data:view.isPreview and !data:amp.active' id='LinkList03' locked='true' title='Dịch' type='LinkList' version='2' visible='true'>
                 <b:widget-settings>
-                  <b:widget-setting name='text-10'>ta</b:widget-setting>
                   <b:widget-setting name='shownum'>15</b:widget-setting>
-                  <b:widget-setting name='link-17'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-16'>custom_text</b:widget-setting>
+                  <b:widget-setting name='link-3'>Việt Ngữ</b:widget-setting>
                   <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                  <b:widget-setting name='link-1'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-13'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-2'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-12'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-15'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-0'>system</b:widget-setting>
-                  <b:widget-setting name='link-14'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-11'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-10'>custom_text</b:widget-setting>
-                  <b:widget-setting name='text-9'>ne</b:widget-setting>
-                  <b:widget-setting name='link-9'>custom_text</b:widget-setting>
-                  <b:widget-setting name='text-8'>mr</b:widget-setting>
-                  <b:widget-setting name='link-7'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-8'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-5'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-6'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-3'>custom_text</b:widget-setting>
-                  <b:widget-setting name='link-4'>custom_text</b:widget-setting>
                   <b:widget-setting name='text-1'>system</b:widget-setting>
+                  <b:widget-setting name='link-1'>Ngôn ngữ hệ thống</b:widget-setting>
                   <b:widget-setting name='text-0'>default</b:widget-setting>
-                  <b:widget-setting name='text-3'>hi</b:widget-setting>
+                  <b:widget-setting name='link-2'>Văn bản gốc</b:widget-setting>
+                  <b:widget-setting name='text-3'>vi</b:widget-setting>
+                  <b:widget-setting name='link-0'>system</b:widget-setting>
                   <b:widget-setting name='text-2'>page</b:widget-setting>
-                  <b:widget-setting name='text-5'>id</b:widget-setting>
-                  <b:widget-setting name='text-4'>en</b:widget-setting>
-                  <b:widget-setting name='text-7'>gu</b:widget-setting>
-                  <b:widget-setting name='text-6'>bn</b:widget-setting>
-                  <b:widget-setting name='text-15'>ko</b:widget-setting>
-                  <b:widget-setting name='text-16'>tr</b:widget-setting>
-                  <b:widget-setting name='text-17'>vi</b:widget-setting>
-                  <b:widget-setting name='text-11'>te</b:widget-setting>
-                  <b:widget-setting name='text-12'>kn</b:widget-setting>
-                  <b:widget-setting name='text-13'>ha</b:widget-setting>
-                  <b:widget-setting name='text-14'>ar</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
                   <input class='transI' hidden='' id='forTranslate' type='checkbox'/>
@@ -5618,7 +5547,7 @@ const PlusUIConfig = () => ({});
 
             <b:comment><!--[ Ad content ]--></b:comment>
             <b:section class='mainA bl-hide-title' cond='!data:story.active and !data:blog.isPrivateBlog and !data:view.isPreview and !data:view.isPage' id='sec_Horizontal-Ad' maxwidgets='3' showaddelement='true'>
-              <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList81' locked='true' title='Under Header Ad' type='LinkList' version='2' visible='true'>
+              <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList81' locked='true' title='Under Header Ad' type='LinkList' version='2' visible='false'>
                 <b:widget-settings>
                   <b:widget-setting name='shownum'>2</b:widget-setting>
                   <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -5840,7 +5769,7 @@ const PlusUIConfig = () => ({});
                 </b:with>
 
                 <b:section cond='!data:story.active and data:view.isHomepage' id='sec_Top_Widgets' showaddelement='true'>
-                  <b:widget cond='!data:blog.isPrivateBlog and !data:view.isPreview and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList82' locked='true' title='Above Pinned Post Ad' type='LinkList' version='2' visible='true'>
+                  <b:widget cond='!data:blog.isPrivateBlog and !data:view.isPreview and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList82' locked='true' title='Above Pinned Post Ad' type='LinkList' version='2' visible='false'>
                     <b:widget-settings>
                       <b:widget-setting name='shownum'>2</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -5992,7 +5921,7 @@ const PlusUIConfig = () => ({});
                 </b:section>
 
                 <b:section id='sec_Main_Widgets' showaddelement='true'>
-                  <b:widget cond='!data:story.active and !data:blog.isPrivateBlog and !data:view.isPreview and (data:view.isHomepage or data:view.isPost) and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList83' locked='true' title='Above Posts Ad [Desktop]' type='LinkList' version='2' visible='true'>
+                  <b:widget cond='!data:story.active and !data:blog.isPrivateBlog and !data:view.isPreview and (data:view.isHomepage or data:view.isPost) and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList83' locked='true' title='Above Posts Ad [Desktop]' type='LinkList' version='2' visible='false'>
                     <b:widget-settings>
                       <b:widget-setting name='shownum'>2</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -6058,7 +5987,7 @@ const PlusUIConfig = () => ({});
 
 
                               <!--[ Fullpage condition ]-->
-                              <b:class cond='data:view.isSingleItem and data:posts any (p =&gt; p.labels any (l =&gt; l.name in [ &quot;Phim&quot; , &quot;Label_2&quot; ]))' name='fullP'/>
+                              <b:class cond='data:view.isSingleItem and data:posts any (p =&gt; p.labels any (l =&gt; l.name in [ &quot;Mở rộng&quot; , &quot;Label_2&quot; ]))' name='fullP'/>
 
                               <!--[ If no content found ]-->
                               <b:include cond='data:posts.empty' name='noContentPlaceholder'/>
@@ -7180,7 +7109,7 @@ const PlusUIConfig = () => ({});
                 </b:section>
 
                 <b:section cond='!data:story.active and !data:blog.isPrivateBlog and !data:view.isPreview and !data:view.isSingleItem' id='sec_Bottom_Widgets' showaddelement='true'>
-                  <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList85' locked='true' title='Below Posts Ad' type='LinkList' version='2' visible='true'>
+                  <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList85' locked='true' title='Below Posts Ad' type='LinkList' version='2' visible='false'>
                     <b:widget-settings>
                       <b:widget-setting name='shownum'>2</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -7284,7 +7213,7 @@ const PlusUIConfig = () => ({});
                       <b:includable id='postReactions'><!--[ removed ]--></b:includable>
                       <b:includable id='postShareButtons'><!--[ removed ]--></b:includable>
                       <b:includable id='postTimestamp'>
-                        <time class='aTtmp iTtmp pbl' expr:data-text='data:vars.m_published' expr:data-time='format(data:post.date, &quot;MMM d&quot;)' expr:datetime='data:post.date.iso8601' expr:title='&quot;Published on: &quot; + format(data:post.date, &quot;MMMM d, YYYY&quot;)'/>
+                        <time class='aTtmp iTtmp pbl' expr:data-text='data:vars.m_published' expr:data-time='format(data:post.date, &quot;dd MMMM&quot;)' expr:datetime='data:post.date.iso8601' expr:title='&quot;Published on: &quot; + format(data:post.date, &quot;dd MMMM, YYYY&quot;)'/>
                       </b:includable>
                       <b:includable id='sharingButton'><!--[ removed ]--></b:includable>
                       <b:includable id='sharingButtonContent'><!--[ removed ]--></b:includable>
@@ -7396,7 +7325,7 @@ const PlusUIConfig = () => ({});
 
                   <b:comment><!--[ sideB sticky ]--></b:comment>
                   <b:section class='sideS' cond='data:view.isLayoutMode or (!data:blog.isPrivateBlog and !data:view.isPreview)' id='sec_Side_Sticky' showaddelement='true'>
-                    <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList86' locked='true' title='Sticky Ad [Desktop]' type='LinkList' version='2' visible='true'>
+                    <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList86' locked='true' title='Sticky Ad [Desktop]' type='LinkList' version='2' visible='false'>
                       <b:widget-settings>
                         <b:widget-setting name='shownum'>2</b:widget-setting>
                         <b:widget-setting name='sorting'>NONE</b:widget-setting>
